@@ -1,1 +1,2 @@
 require "clipboard"
+require "base"
