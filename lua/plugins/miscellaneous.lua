@@ -21,4 +21,9 @@ return {
     lazy = true,
     -- for neo-tree
   },
+  {
+    "nvim-telescope/telescope-file-browser.nvim",
+    dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
+    -- for telescope
+  },
 }

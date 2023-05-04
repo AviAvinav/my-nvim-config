@@ -30,3 +30,20 @@ keymap.set("n", "<C-w><down>", "<C-w>-")
 
 -- Neo Tree
 keymap.set("n", "<C-t>", ":NeoTreeFocusToggle<Return>", { silent = true })
+
+-- Telescope
+local builtin = require "telescope.builtin"
+local opts = { noremap = true, silent = true }
+
+keymap.set("n", "ff", builtin.find_files, opts)
+keymap.set("n", "fg", builtin.live_grep, opts)
+keymap.set("n", "fb", builtin.buffers, opts)
+keymap.set("n", "fh", builtin.help_tags, opts)
+
+
+vim.api.nvim_set_keymap(
+  "n",
+  "sf",
+  ":Telescope file_browser path=%:p:h select_buffer=true<Return>",
+  { noremap = true, silent = true }
+)
