@@ -40,7 +40,6 @@ keymap.set("n", "fg", builtin.live_grep, opts)
 keymap.set("n", "fb", builtin.buffers, opts)
 keymap.set("n", "fh", builtin.help_tags, opts)
 
-
 vim.api.nvim_set_keymap(
   "n",
   "sf",
