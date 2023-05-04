@@ -6,6 +6,7 @@ Tasks:
 
 - [x] Setup `lazy.nvim`
 - [x] Setup keymaps
-- [ ] Setup Telescope
-- [ ] Setup LSP with `mason`
+- [x] Setup Telescope
+- [ ] Setup LSP
+- [ ] Setup completions with `cmp`
 - [ ] Setup snippets
