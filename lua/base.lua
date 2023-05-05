@@ -5,5 +5,5 @@ vim.opt.softtabstop = 2
 vim.opt.smarttab = true
 vim.opt.showcmd = true
 vim.opt.cmdheight = 1
-vim.opt.wrap = true
+vim.opt.wrap = false
 vim.opt.wildignore:append { "*/node_modules/*" }
