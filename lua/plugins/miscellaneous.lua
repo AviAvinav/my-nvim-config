@@ -26,4 +26,8 @@ return {
     dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
     -- for telescope
   },
+	{
+	"L3MON4D3/LuaSnip",
+	lazy = true,
+	},
 }
