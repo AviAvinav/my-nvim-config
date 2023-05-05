@@ -2,7 +2,7 @@
 
 This repo contains my config files for my neovim setup.
 
-Tasks:
+## Roadmap
 
 - [x] Setup `lazy.nvim`
 - [x] Setup keymaps
