@@ -9,5 +9,5 @@ Tasks:
 - [x] Setup Telescope
 - [x] Setup LSP
 - [x] Setup completions with `cmp`
-- [ ] Setup formatter & linters with `formatter.nvim`, use prettierd instead of prettier
+- [x] Setup formatter & linters with `formatter.nvim`, use prettierd instead of prettier
 - [ ] Setup snippets

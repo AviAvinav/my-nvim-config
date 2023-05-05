@@ -1,9 +1,11 @@
 return {
   "jose-elias-alvarez/null-ls.nvim",
+  event = { "BufReadPre", "BufWritePre" },
   config = function()
     local null_ls = require "null-ls"
 
     local formatting = null_ls.builtins.formatting
+    local diagnostics = null_ls.builtins.diagnostics
 
     local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
@@ -26,7 +28,7 @@ return {
           extra_filetypes = { "md", "mdx" },
         },
         formatting.stylua,
-        formatting.eslint_d,
+        diagnostics.eslint,
       },
     }
   end,
