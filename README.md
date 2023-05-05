@@ -8,6 +8,6 @@ Tasks:
 - [x] Setup keymaps
 - [x] Setup Telescope
 - [x] Setup LSP
-- [ ] Setup completions with `cmp`
+- [x] Setup completions with `cmp`
 - [ ] Setup formatter & linters with `formatter.nvim`, use prettierd instead of prettier
 - [ ] Setup snippets
