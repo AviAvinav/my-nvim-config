@@ -5,6 +5,9 @@ return {
     local ts = require "nvim-treesitter.configs"
 
     ts.setup {
+      autotag = {
+        enable = true,
+      },
       ensure_installed = {
         "css",
         "html",
