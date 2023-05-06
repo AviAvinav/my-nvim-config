@@ -25,7 +25,7 @@ keymap.set("n", "<C-w><up>", "<C-w>+")
 keymap.set("n", "<C-w><down>", "<C-w>-")
 
 -- Neo Tree
-keymap.set("n", "<C-t>", ":NeoTreeFocusToggle<Return>", { silent = true })
+-- keymap.set("n", "<C-t>", ":NeoTreeFocusToggle<Return>", { silent = true })
 
 -- Telescope
 local builtin = require "telescope.builtin"
@@ -42,3 +42,6 @@ vim.api.nvim_set_keymap(
   ":Telescope file_browser path=%:p:h select_buffer=true<Return>",
   { noremap = true, silent = true }
 )
+
+-- eslint
+keymap.set("n", "esl", ":EslintFixAll<Return>", { silent = true })

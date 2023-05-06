@@ -90,6 +90,10 @@ return {
       nvim_lsp.svelte.setup {
         on_attach = on_attach,
       }
+
+      nvim_lsp.eslint.setup {
+        on_attach = on_attach,
+      }
     end,
   },
   require "plugins.lsp.lspkind",

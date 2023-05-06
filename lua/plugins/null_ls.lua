@@ -28,7 +28,7 @@ return {
           extra_filetypes = { "md", "mdx" },
         },
         formatting.stylua,
-        diagnostics.eslint,
+        -- diagnostics.eslint,
       },
     }
   end,
