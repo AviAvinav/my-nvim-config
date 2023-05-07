@@ -45,3 +45,8 @@ vim.api.nvim_set_keymap(
 
 -- eslint
 keymap.set("n", "esl", ":EslintFixAll<Return>", { silent = true })
+
+-- buffers
+keymap.set("n", "bne", ":bnext<Return>", { silent = true })
+keymap.set("n", "bpr", ":bprevious<Return>", { silent = true })
+keymap.set("n", "bde", ":bdelete<Return>", { silent = true })
