@@ -9,5 +9,11 @@ This repo contains my config files for my neovim setup.
 - [x] Setup Telescope
 - [x] Setup LSP
 - [x] Setup completions with `cmp`
-- [x] Setup formatter & linters with `formatter.nvim`, use prettierd instead of prettier
+- [x] Setup formatter & linters
+- [ ] Fix buffers
+- [ ] Setup sessions, add to start screen & telescope
 - [ ] Setup snippets
+- [ ] Setup toggleterm
+- [ ] Setup fugitive
+- [ ] Setup undo tree
+- [ ] Setup dap 
