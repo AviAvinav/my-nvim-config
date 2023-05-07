@@ -21,4 +21,7 @@ return {
     lazy = true,
     -- for neo-tree
   },
+  -- {
+  --   "mbbill/undotree",
+  -- },
 }
