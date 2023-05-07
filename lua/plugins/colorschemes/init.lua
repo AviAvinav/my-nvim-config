@@ -1,4 +1,4 @@
 return {
   require "plugins.colorschemes.tokyonight",
-  -- require "plugins.colorschemes.poimandres"
+  require "plugins.colorschemes.poimandres",
 }
