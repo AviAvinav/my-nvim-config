@@ -55,6 +55,11 @@ return {
           section = "Telescope",
         },
         {
+          action = "Telescope live_grep path=%:p:h<Return>",
+          name = "G: Live Grep",
+          section = "Telescope",
+        },
+        {
           action = "te",
           name = "E: New Buffer",
           section = "Builtin actions",
@@ -74,6 +79,7 @@ return {
   			au User MiniStarterOpened nmap <buffer> k <Cmd>lua MiniStarter.update_current_item('prev')<CR>
   			au User MiniStarterOpened nmap <buffer> ff <Cmd>Telescope find_files<CR>
   			au User MiniStarterOpened nmap <buffer> sf <Cmd>Telescope file_browser<CR>
+				au User MiniStarterOpened nmap <buffer> fg <Cmd>Telescope live_grep<CR>
   		augroup END
 ]]
   end,
