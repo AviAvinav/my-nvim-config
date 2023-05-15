@@ -8,10 +8,10 @@ return {
     "tpope/vim-fugitive",
     -- for lualine
   },
-  {
-    "ayu-theme/ayu-vim",
-    -- for lualine
-  },
+  -- {
+  --   "ayu-theme/ayu-vim",
+  --   -- for lualine
+  -- },
   {
     "nvim-lua/plenary.nvim",
     lazy = true,
