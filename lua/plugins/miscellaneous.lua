@@ -24,4 +24,8 @@ return {
   -- {
   --   "mbbill/undotree",
   -- },
+  {
+    "stevearc/dressing.nvim",
+    lazy = true,
+  },
 }

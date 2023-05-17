@@ -50,3 +50,7 @@ keymap.set("n", "esl", ":EslintFixAll<Return>", { silent = true })
 keymap.set("n", "bne", ":bnext<Return>", { silent = true })
 keymap.set("n", "bpr", ":bprevious<Return>", { silent = true })
 keymap.set("n", "bde", ":bdelete<Return>", { silent = true })
+
+-- Icon Picker
+
+keymap.set("i", "<C-k>", "<cmd>IconPickerInsert<cr>", opts)
