@@ -32,7 +32,7 @@ local greeting = function()
   local day_part = ({ "evening", "morning", "afternoon", "evening" })[part_id]
   local username = vim.loop.os_get_passwd()["username"] or "USERNAME"
 
-  return ("Good %s, %s"):format(day_part, username)
+  return ("Good %s, @%s"):format(day_part, username)
 end
 
 return {
@@ -42,7 +42,7 @@ return {
   config = function()
     require("mini.starter").setup {
       header = neovimheader,
-      footer = table.concat { greeting(), "\n\n", os.date "%a %b %d | %I:%M %p" },
+      footer = table.concat { greeting(), "\n", "Go and Study, U little shit!", "\n\n", os.date "%a %b %d | %I:%M %p" },
       items = {
         {
           action = "Telescope file_browser path=%:p:h select_buffer=true<Return>",
