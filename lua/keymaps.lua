@@ -26,6 +26,7 @@ keymap.set("n", "<C-w><down>", "<C-w>-")
 
 -- Neo Tree
 keymap.set("n", "<C-t>", ":NeoTreeFocusToggle<Return>", { silent = true })
+keymap.set("n", "ntf", "NeoTreeFloatToggle<Return>", { silent = true })
 
 -- Telescope
 local builtin = require "telescope.builtin"

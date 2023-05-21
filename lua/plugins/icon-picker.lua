@@ -6,4 +6,5 @@ return {
     }
   end,
   dependencies = { "stevearc/dressing.nvim" },
+  cmd = "IconPickerInsert",
 }

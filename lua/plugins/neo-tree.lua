@@ -1,6 +1,7 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
   branch = "v2.x",
+  cmd = { "NeoTreeFocusToggle", "NeoTreeFloatToggle" },
   config = function()
     local neo_tree = require "neo-tree"
 
