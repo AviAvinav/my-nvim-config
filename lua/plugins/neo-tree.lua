@@ -15,6 +15,7 @@ return {
       window = {
         position = "right",
       },
+      hijack_netrw_behavior = "open_current",
     }
   end,
 }
