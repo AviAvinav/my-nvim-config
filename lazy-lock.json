@@ -27,7 +27,6 @@
   "poimandres.nvim": { "branch": "main", "commit": "43ea31d1e19f7603697bb3272b233930d0292383" },
   "telescope-file-browser.nvim": { "branch": "master", "commit": "6cf29d5139601993343c4e70ee2d1f67959d9cc5" },
   "telescope.nvim": { "branch": "master", "commit": "c1a2af0af69e80e14e6b226d3957a064cd080805" },
-  "toggleterm.nvim": { "branch": "main", "commit": "026dff5e2b504941cf172691561a67ea362596aa" },
   "tokyonight.nvim": { "branch": "main", "commit": "6972aade12a9c6ecbbd163739d7617c21fc6bc4b" },
   "vim-fugitive": { "branch": "master", "commit": "5f0d280b517cacb16f59316659966c7ca5e2bea2" }
 }
