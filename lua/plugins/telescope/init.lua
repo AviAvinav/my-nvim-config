@@ -1,22 +1,22 @@
 return {
-  {
-    "nvim-telescope/telescope.nvim",
-    tag = "0.1.1",
-    dependencies = { "nvim-lua/plenary.nvim" },
-    config = function()
-      local tl = require "telescope"
-      local file_browser = require "plugins.telescope.file_browser"
+	{
+		"nvim-telescope/telescope.nvim",
+		tag = "0.1.1",
+		dependencies = { "nvim-lua/plenary.nvim" },
+		config = function()
+			local tl = require "telescope"
+			local file_browser = require "plugins.telescope.file_browser"
 
-      tl.setup {
-        extensions = {
-          file_browser = file_browser,
-        },
-      }
-      tl.load_extension "file_browser"
-    end,
-  },
-  {
-    "nvim-telescope/telescope-file-browser.nvim",
-    dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
-  },
+			tl.setup {
+				extensions = {
+					file_browser = file_browser,
+				},
+			}
+			tl.load_extension "file_browser"
+		end,
+	},
+	{
+		"nvim-telescope/telescope-file-browser.nvim",
+		dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
+	},
 }
