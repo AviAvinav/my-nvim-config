@@ -10,6 +10,7 @@ This repo contains my config files for my neovim setup.
 - [x] Setup LSP
 - [x] Setup completions with `cmp`
 - [x] Setup formatter & linters
+- [ ] Setup `mason.nvim`
 - [ ] Fix buffers
 - [ ] Setup sessions, add to start screen & telescope
 - [ ] Setup snippets
