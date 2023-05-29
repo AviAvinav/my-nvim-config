@@ -26,23 +26,23 @@ keymap.set("n", "<C-w><down>", "<C-w>-")
 
 -- Neo Tree
 keymap.set("n", "<C-t>", ":NeoTreeFocusToggle<Return>", { silent = true })
-keymap.set("n", "ntf", "NeoTreeFloatToggle<Return>", { silent = true })
+keymap.set("n", "nf", ":NeoTreeFloatToggle<Return>", { silent = true })
 
 -- Telescope
-local builtin = require "telescope.builtin"
+-- local builtin = require "telescope.builtin"
 local opts = { noremap = true, silent = true }
 
-keymap.set("n", "ff", builtin.find_files, opts)
-keymap.set("n", "fg", builtin.live_grep, opts)
-keymap.set("n", "fb", builtin.buffers, opts)
-keymap.set("n", "fh", builtin.help_tags, opts)
+keymap.set("n", "ff", ":Telescope find_files<Return>", opts)
+keymap.set("n", "fg", ":Telescope live_grep<Return>", opts)
+keymap.set("n", "fb", ":Telescope buffers<Return>", opts)
+keymap.set("n", "fh", ":Telescope help_tags<Return>", opts)
 
-vim.api.nvim_set_keymap(
-  "n",
-  "sf",
-  ":Telescope file_browser path=%:p:h select_buffer=true<Return>",
-  { noremap = true, silent = true }
-)
+-- vim.api.nvim_set_keymap(
+-- 	"n",
+-- 	"sf",
+-- 	":Telescope file_browser path=%:p:h select_buffer=true<Return>",
+-- 	{ noremap = true, silent = true }
+-- )
 
 -- eslint
 keymap.set("n", "esl", ":EslintFixAll<Return>", { silent = true })
@@ -55,3 +55,7 @@ keymap.set("n", "bde", ":bdelete<Return>", { silent = true })
 -- Icon Picker
 
 keymap.set("i", "<C-k>", "<cmd>IconPickerInsert<cr>", opts)
+
+-- Oil
+
+keymap.set("n", "oi", ":Oil<Return>", opts)

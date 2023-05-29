@@ -78,8 +78,9 @@ return {
   			au User MiniStarterOpened nmap <buffer> j <Cmd>lua MiniStarter.update_current_item('next')<CR>
   			au User MiniStarterOpened nmap <buffer> k <Cmd>lua MiniStarter.update_current_item('prev')<CR>
   			au User MiniStarterOpened nmap <buffer> ff <Cmd>Telescope find_files<CR>
-  			au User MiniStarterOpened nmap <buffer> sf <Cmd>Telescope file_browser<CR>
+  			au User MiniStarterOpened nmap <buffer> nf <Cmd>NeoTreeFloatToggle<CR>
 				au User MiniStarterOpened nmap <buffer> fg <Cmd>Telescope live_grep<CR>
+				au User MiniStarterOpened nmap <buffer> oi <Cmd>Oil<CR>
   		augroup END
 ]]
 	end,
