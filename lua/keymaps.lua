@@ -37,12 +37,12 @@ keymap.set("n", "fg", ":Telescope live_grep<Return>", opts)
 keymap.set("n", "fb", ":Telescope buffers<Return>", opts)
 keymap.set("n", "fh", ":Telescope help_tags<Return>", opts)
 
--- vim.api.nvim_set_keymap(
--- 	"n",
--- 	"sf",
--- 	":Telescope file_browser path=%:p:h select_buffer=true<Return>",
--- 	{ noremap = true, silent = true }
--- )
+vim.api.nvim_set_keymap(
+  "n",
+  "sf",
+  ":Telescope file_browser path=%:p:h select_buffer=true<Return>",
+  { noremap = true, silent = true }
+)
 
 -- eslint
 keymap.set("n", "esl", ":EslintFixAll<Return>", { silent = true })

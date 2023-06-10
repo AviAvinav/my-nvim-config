@@ -15,10 +15,22 @@ return {
       sections = {
         lualine_a = { "mode" },
         lualine_b = { "branch" },
+        -- lualine_c = {
+        --   {
+        --     "buffers",
+        --     filetype_names = {
+        --       TelescopePrompt = "Telescope",
+        --       dashboard = "Dashboard",
+        --       lazy = "Lazy",
+        --       fzf = "FZF",
+        --     },
+        --   },
+        -- },
         lualine_c = { {
           "filename",
           file_status = true,
           path = 1,
+          shorting_target = 40,
         } },
         lualine_x = {
           {

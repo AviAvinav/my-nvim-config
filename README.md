@@ -18,3 +18,8 @@ This repo contains my config files for my neovim setup.
 - [ ] Setup fugitive
 - [ ] Setup undo tree
 - [ ] Setup dap 
+
+## How to solve mason issue?
+
+Problem: The LSP weren't working even after installing it with mason
+Solution: Add the location of them to PATH
