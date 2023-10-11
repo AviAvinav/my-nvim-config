@@ -28,6 +28,9 @@ keymap.set("n", "<C-w><down>", "<C-w>-")
 keymap.set("n", "<C-t>", ":NeoTreeFocusToggle<Return>", { silent = true })
 keymap.set("n", "nf", ":NeoTreeFloatToggle<Return>", { silent = true })
 
+-- Escape insert mode
+keymap.set("i", "jk", "<Esc>")
+
 -- Telescope
 -- local builtin = require "telescope.builtin"
 local opts = { noremap = true, silent = true }
@@ -38,10 +41,10 @@ keymap.set("n", "fb", ":Telescope buffers<Return>", opts)
 keymap.set("n", "fh", ":Telescope help_tags<Return>", opts)
 
 vim.api.nvim_set_keymap(
-  "n",
-  "sf",
-  ":Telescope file_browser path=%:p:h select_buffer=true<Return>",
-  { noremap = true, silent = true }
+	"n",
+	"sf",
+	":Telescope file_browser path=%:p:h select_buffer=true<Return>",
+	{ noremap = true, silent = true }
 )
 
 -- eslint
