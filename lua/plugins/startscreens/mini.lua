@@ -25,6 +25,17 @@ local neovimheader = table.concat({
   [[───────────────────────────────────]],
 }, "\n")
 
+local avimheader = table.concat({
+  [[     _____       .__		  ]],
+  [[  /  _  \___  _|__| _____     ]],
+  [[ /  /_\  \  \/ /  |/     \    ]],
+  [[/    |    \   /|  |  Y Y  \   ]],
+  [[\____|__  /\_/ |__|__|_|  /   ]],
+  [[        \/              \/    ]],
+  [[──────────────────────────────]],
+  [[──────────────────────────────]],
+}, "\n")
+
 local greeting = function()
   local hour = tonumber(vim.fn.strftime "%H")
   -- [04:00, 12:00) - morning, [12:00, 20:00) - day, [20:00, 04:00) - evening
@@ -41,7 +52,7 @@ return {
   event = "VimEnter",
   config = function()
     require("mini.starter").setup {
-      header = neovimheader,
+      header = avimheader,
       footer = table.concat { greeting(), "\n", os.date "%a %b %d | %I:%M %p" },
       items = {
         {
