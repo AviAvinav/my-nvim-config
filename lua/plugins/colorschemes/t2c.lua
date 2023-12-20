@@ -1,5 +1,6 @@
 return {
 	"svermeulen/text-to-colorscheme.nvim",
+	cmd = { "T2CGenerate" },
 	config = function()
 		require("text-to-colorscheme").setup {
 			ai = {

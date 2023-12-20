@@ -1,6 +1,6 @@
 return {
   "nvim-lualine/lualine.nvim",
-  event = { "VeryLazy" },
+  -- event = { "VeryLazy" },
   config = function()
     local lualine = require "lualine"
 
@@ -14,24 +14,27 @@ return {
       },
       sections = {
         lualine_a = { "mode" },
-        lualine_b = { "branch" },
-        -- lualine_c = {
+        lualine_b = { { "branch" } },
+        -- lualine_x = {
         --   {
         --     "buffers",
-        --     filetype_names = {
-        --       TelescopePrompt = "Telescope",
-        --       dashboard = "Dashboard",
-        --       lazy = "Lazy",
-        --       fzf = "FZF",
-        --     },
+        --     max_length = vim.o.columns * 2 / 3,
+        --     -- filetype_names = {
+        --     -- 	TelescopePrompt = "Telescope",
+        --     -- 	dashboard = "Dashboard",
+        --     -- 	lazy = "Lazy",
+        --     -- 	fzf = "FZF",
+        --     -- },
         --   },
         -- },
-        lualine_c = { {
-          "filename",
-          file_status = true,
-          path = 1,
-          shorting_target = 40,
-        } },
+        lualine_c = {
+          {
+            "filename",
+            file_status = true,
+            path = 1,
+            shorting_target = 40,
+          },
+        },
         lualine_x = {
           {
             "diagnostics",
@@ -39,8 +42,8 @@ return {
             symbols = { error = " ", warn = " ", info = " ", hint = " " },
           },
         },
-        lualine_y = { "progress" },
-        lualine_z = { "location" },
+        lualine_y = { { "progress" } },
+        lualine_z = { { "location" } },
       },
       inactive_sections = {
         lualine_a = {},

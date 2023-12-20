@@ -41,10 +41,10 @@ keymap.set("n", "fb", ":Telescope buffers<Return>", opts)
 keymap.set("n", "fh", ":Telescope help_tags<Return>", opts)
 
 vim.api.nvim_set_keymap(
-	"n",
-	"sf",
-	":Telescope file_browser path=%:p:h select_buffer=true<Return>",
-	{ noremap = true, silent = true }
+  "n",
+  "sf",
+  ":Telescope file_browser path=%:p:h select_buffer=true<Return>",
+  { noremap = true, silent = true }
 )
 
 -- eslint
@@ -61,4 +61,4 @@ keymap.set("i", "<C-k>", "<cmd>IconPickerInsert<cr>", opts)
 
 -- Oil
 
-keymap.set("n", "oi", ":Oil<Return>", opts)
+keymap.set("n", "oily", ":Oil<Return>", opts)
