@@ -9,6 +9,11 @@ return {
     local lspkind = require "lspkind"
 
     cmp.setup {
+      -- window = {
+      --   completion = cmp.config.window.bordered {},
+      --   documentation = cmp.config.window.bordered {},
+      --   scrollbar = false,
+      -- },
       snippet = {
         expand = function(args)
           require("luasnip").lsp_expand(args.body)
@@ -38,8 +43,21 @@ return {
     }
 
     vim.cmd [[
-	set completeopt=menuone,noinsert,noselect
-	highlight! default link CmpItemKind CmpItemMenuDefault
-]]
+    	set completeopt=menuone,noinsert,noselect
+    	highlight! default link CmpItemKind CmpItemMenuDefault
+    ]]
+
+    -- for cmp transparent background
+    --     vim.cmd [[set pumblend=0]]
+    --
+    --     vim.cmd [[
+    --   set completeopt=menuone,noinsert,noselect
+    --   highlight CmpBorder guifg=#2d2e43 guibg=NONE
+    --   highlight CmpPmenu guifg=#fefefe guibg=NONE
+    --   highlight CmpDocBorder guifg=#2d2e43 guibg=NONE
+    --   highlight CmpDocPmenu guifg=#fefefe guibg=NONE
+    --   highlight CmpItemMenuDefault guifg=#fefefe guibg=NONE
+    --   highlight CmpItemKind guifg=#fefefe guibg=NONE
+    -- ]]
   end,
 }

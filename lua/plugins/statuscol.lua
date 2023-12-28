@@ -1,39 +1,39 @@
 return {
-	-- "luukvbaal/statuscol.nvim",
-	-- config = function()
-	--   local statuscol = require "statuscol"
-	--   local builtin = require "statuscol.builtin"
-	--   statuscol.setup {
-	--
-	--     segments = {
-	--       -- {
-	--       --   text = { "%s" },
-	--       --   condition = { true },
-	--       --   click = "v:lua.ScSa",
-	--       -- },
-	--       {
-	--         text = { " " },
-	--         condition = { true },
-	--       },
-	--       {
-	--         sign = { name = { "Dap*" }, namespace = { "bulb*" } },
-	--         click = "v:lua.ScSa",
-	--       },
-	--       {
-	--         text = { builtin.lnumfunc, " " },
-	--         condition = { true, builtin.not_empty },
-	--         click = "v:lua.ScLa",
-	--       },
-	--       {
-	--         sign = { namespace = { "gitsign*" }, colwidth = 1 },
-	--         click = "v:lua.ScSa",
-	--       },
-	--       {
-	--         text = { builtin.foldfunc, "  " },
-	--         condition = { true, builtin.not_empty },
-	--         click = "v:lua.ScFa",
-	--       },
-	--     },
-	--   }
-	-- end,
+  -- "luukvbaal/statuscol.nvim",
+  -- config = function()
+  --   local statuscol = require "statuscol"
+  --   local builtin = require "statuscol.builtin"
+  --   statuscol.setup {
+  --
+  --     segments = {
+  --       -- {
+  --       --   text = { "%s" },
+  --       --   condition = { true },
+  --       --   click = "v:lua.ScSa",
+  --       -- },
+  --       {
+  --         text = { " " },
+  --         condition = { true },
+  --       },
+  --       {
+  --         sign = { name = { "Dap*" }, namespace = { "bulb*" } },
+  --         click = "v:lua.ScSa",
+  --       },
+  --       {
+  --         text = { builtin.lnumfunc, " " },
+  --         condition = { true, builtin.not_empty },
+  --         click = "v:lua.ScLa",
+  --       },
+  --       {
+  --         sign = { namespace = { "gitsign*" }, colwidth = 1 },
+  --         click = "v:lua.ScSa",
+  --       },
+  --       {
+  --         text = { builtin.foldfunc, "  " },
+  --         condition = { true, builtin.not_empty },
+  --         click = "v:lua.ScFa",
+  --       },
+  --     },
+  --   }
+  -- end,
 }
