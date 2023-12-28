@@ -28,12 +28,24 @@ keymap.set("n", "<C-w><down>", "<C-w>-")
 keymap.set("n", "<C-t>", ":NeoTreeFocusToggle<Return>", { silent = true })
 keymap.set("n", "nf", ":NeoTreeFloatToggle<Return>", { silent = true })
 
--- Escape insert mode
+-- Insert mode bindings
 keymap.set("i", "jk", "<Esc>")
+keymap.set("i", "kj", "<Esc>")
+-- keymap.set("i", "<C-[", "<Esc> o")
 
 -- Telescope
 -- local builtin = require "telescope.builtin"
 local opts = { noremap = true, silent = true }
+
+vim.cmd "cnoreabbrev W! w!"
+vim.cmd "cnoreabbrev Q! q!"
+vim.cmd "cnoreabbrev Qall! qall!"
+vim.cmd "cnoreabbrev Wq wq"
+vim.cmd "cnoreabbrev Wa wa"
+vim.cmd "cnoreabbrev wQ wq"
+vim.cmd "cnoreabbrev WQ wq"
+vim.cmd "cnoreabbrev W w"
+vim.cmd "cnoreabbrev Q q"
 
 keymap.set("n", "ff", ":Telescope find_files<Return>", opts)
 keymap.set("n", "fg", ":Telescope live_grep<Return>", opts)
@@ -41,10 +53,10 @@ keymap.set("n", "fb", ":Telescope buffers<Return>", opts)
 keymap.set("n", "fh", ":Telescope help_tags<Return>", opts)
 
 vim.api.nvim_set_keymap(
-  "n",
-  "sf",
-  ":Telescope file_browser path=%:p:h select_buffer=true<Return>",
-  { noremap = true, silent = true }
+	"n",
+	"sf",
+	":Telescope file_browser path=%:p:h select_buffer=true<Return>",
+	{ noremap = true, silent = true }
 )
 
 -- eslint
