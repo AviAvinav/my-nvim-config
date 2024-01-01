@@ -2,26 +2,18 @@ return {
   {
     "nvim-tree/nvim-web-devicons",
     lazy = true,
-    config = function()
-      require("nvim-web-devicons").setup {
-        override = {
-          toml = {
-            icon = "",
-          },
+    opts = {
+      override = {
+        toml = {
+          icon = "",
         },
-      }
-    end,
-    -- for lualine & neo-tree
+      },
+    },
   },
   {
     "tpope/vim-fugitive",
     cmd = { "G", "Git" },
-    -- for lualine
   },
-  -- {
-  --   "ayu-theme/ayu-vim",
-  --   -- for lualine
-  -- },
   {
     "nvim-lua/plenary.nvim",
     lazy = true,
@@ -29,13 +21,31 @@ return {
   {
     "MunifTanjim/nui.nvim",
     lazy = true,
-    -- for neo-tree
   },
-  -- {
-  --   "mbbill/undotree",
-  -- },
   {
-    "stevearc/dressing.nvim",
-    lazy = true,
+    "jiangmiao/auto-pairs",
+    event = { "InsertEnter" },
+  },
+  {
+    "numToStr/Comment.nvim",
+    opts = {},
+    event = { "BufReadPost", "BufNewFile" },
+  },
+  {
+    "ziontee113/icon-picker.nvim",
+    opts = {
+      disable_legacy_commands = true,
+    },
+    dependencies = { "stevearc/dressing.nvim", lazy = true },
+    cmd = "IconPickerInsert",
+  },
+  {
+    "github/copilot.vim",
+    event = { "InsertEnter" },
+  },
+  {
+    "karb94/neoscroll.nvim",
+    opts = {},
+    event = { "BufNewFile", "BufReadPost" },
   },
 }
