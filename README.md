@@ -2,6 +2,10 @@
 
 This repo contains my config files for my neovim setup.
 
+<img src="./screenshots/1.png" />
+<img src="./screenshots/2.png" />
+<img src="./screenshots/3.png" />
+
 ## Roadmap
 
 - [x] Setup `lazy.nvim`
@@ -11,13 +15,9 @@ This repo contains my config files for my neovim setup.
 - [x] Setup completions with `cmp`
 - [x] Setup formatter & linters
 - [x] Setup `mason.nvim`
-- [ ] Fix buffers
-- [ ] Setup sessions, add to start screen & telescope
+- [x] Fix buffers
+- [x] Setup fugitive
 - [ ] Setup snippets
-- [ ] Setup toggleterm
-- [ ] Setup fugitive
-- [ ] Setup undo tree
-- [ ] Setup dap 
 
 ## How to solve mason issue?
 
