@@ -34,5 +34,6 @@
   "text-to-colorscheme.nvim": { "branch": "main", "commit": "5a326c6667c2da8fdb53fbac90fc6e9b5af22362" },
   "tokyodark.nvim": { "branch": "master", "commit": "4bfb42924274abc5de9f5f4779075b77c6112c85" },
   "tokyonight.nvim": { "branch": "main", "commit": "f247ee700b569ed43f39320413a13ba9b0aef0db" },
-  "vim-fugitive": { "branch": "master", "commit": "59659093581aad2afacedc81f009ed6a4bfad275" }
+  "vim-fugitive": { "branch": "master", "commit": "59659093581aad2afacedc81f009ed6a4bfad275" },
+  "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" }
 }
