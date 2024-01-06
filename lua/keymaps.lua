@@ -53,6 +53,14 @@ map("n", "bne", ":bnext<Return>", { silent = true })
 map("n", "bpr", ":bprevious<Return>", { silent = true })
 map("n", "bde", ":bdelete<Return>", { silent = true })
 
+-- Bracketing with nvim-surround
+map("x", "(", "S)", { remap = true })
+map("x", ")", "S)", { remap = true })
+map("x", "[", "S]", { remap = true })
+map("x", "]", "S]", { remap = true })
+map("x", "{", "S}", { remap = true })
+map("x", "}", "S}", { remap = true })
+
 -- Some useful remaps
 vim.cmd "cnoreabbrev W! w!"
 vim.cmd "cnoreabbrev Q! q!"
