@@ -6,7 +6,7 @@ local M = {
 local sources = function(formatting)
   return {
     formatting.prettierd.with {
-      extra_filetypes = { "md", "mdx" },
+      extra_filetypes = { "md", "mdx", "astro", "vue", "svelte" },
     },
     formatting.stylua,
     formatting.rustfmt,
