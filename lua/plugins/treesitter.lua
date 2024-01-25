@@ -27,6 +27,19 @@ M.opts = {
     "go",
     "haskell",
   },
+  highlight = {
+    enable = true,
+  },
+  textsubjects = {
+    enable = true,
+  },
+  indent = {
+    enable = true,
+  },
 }
+
+M.config = function(_, opts)
+  require("nvim-treesitter.configs").setup(opts)
+end
 
 return M
