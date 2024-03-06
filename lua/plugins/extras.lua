@@ -48,4 +48,10 @@ return {
     opts = {},
     event = { "BufNewFile", "BufReadPost" },
   },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    opts = {},
+    event = { "BufReadPost", "BufNewFile" },
+  },
 }
