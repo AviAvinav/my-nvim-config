@@ -1,5 +1,6 @@
 local M = {
   "HiPhish/rainbow-delimiters.nvim",
+  event = { "BufReadPost", "BufNewFile" },
 }
 
 M.config = function()
@@ -25,7 +26,6 @@ M.config = function()
       "RainbowDelimiterYellow",
       "RainbowDelimiterBlue",
       "RainbowDelimiterOrange",
-      "RainbowDelimiterGreen",
       "RainbowDelimiterViolet",
       "RainbowDelimiterCyan",
     },

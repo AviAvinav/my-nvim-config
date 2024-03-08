@@ -1,5 +1,6 @@
 local M = {
   "stevearc/conform.nvim",
+  event = { "BufReadPre", "BufWritePre" },
 }
 
 M.config = function()
@@ -12,6 +13,8 @@ M.config = function()
       vue = { { "prettierd", "prettier" } },
       svelte = { { "prettierd", "prettier" } },
       astro = { { "prettierd", "prettier" } },
+      html = { { "prettierd", "prettier" } },
+      css = { { "prettierd", "prettier" } },
       ocaml = { "ocamlformat" },
       rust = { "rustfmt" },
       c = { "clang_format" },
