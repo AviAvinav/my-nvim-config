@@ -33,11 +33,13 @@ return {
         { name = "nvim_lsp" },
         { name = "buffer" },
         { name = "treesitter" },
+        { name = "codeium" },
       },
       formatting = {
         format = lspkind.cmp_format {
           with_text = true,
           maxwidth = 50,
+          ellipsis_char = "...",
         },
       },
     }

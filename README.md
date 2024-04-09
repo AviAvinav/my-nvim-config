@@ -1,6 +1,6 @@
 # Avi's Neovim Config
 
-This repo contains my config files for my neovim setup.
+This repo contains my config files for my neovim setup. If you like it and wish to use it, feel free to clone this repo and use it as your own.
 
 <img src="./screenshots/4.png" />
 <img src="./screenshots/5.png" />

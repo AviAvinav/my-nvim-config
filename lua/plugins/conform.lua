@@ -19,6 +19,12 @@ M.config = function()
       rust = { "rustfmt" },
       c = { "clang_format" },
       cpp = { "clang_format" },
+      typescript = { { "prettierd", "prettier" } },
+      tsx = { { "prettierd", "prettier" } },
+      jsx = { { "prettierd", "prettier" } },
+      json = { { "prettierd", "prettier" } },
+      javascriptreact = { { "prettierd", "prettier" } },
+      typescriptreact = { { "prettierd", "prettier" } },
     },
   }
   vim.api.nvim_create_autocmd("BufWritePre", {

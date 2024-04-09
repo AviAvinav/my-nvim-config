@@ -49,9 +49,9 @@ map("i", "<C-k>", "<cmd>IconPickerInsert<cr>", opts)
 map("n", "esl", ":EslintFixAll<Return>", { silent = true })
 
 -- buffers
-map("n", "bne", ":bnext<Return>", { silent = true })
-map("n", "bpr", ":bprevious<Return>", { silent = true })
-map("n", "bde", ":bdelete<Return>", { silent = true })
+map("n", "bn", ":bnext<Return>", { silent = true })
+map("n", "bp", ":bprevious<Return>", { silent = true })
+map("n", "bd", ":bdelete<Return>", { silent = true })
 
 -- Bracketing with nvim-surround
 map("x", "(", "S)", { remap = true })
