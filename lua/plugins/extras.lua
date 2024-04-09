@@ -24,7 +24,7 @@ return {
   },
   {
     "jiangmiao/auto-pairs",
-    event = { "InsertEnter" },
+    event = { "BufReadPost", "BufNewFile" },
   },
   {
     "numToStr/Comment.nvim",
