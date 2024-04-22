@@ -19,8 +19,9 @@ local split = function(inputstr, sep)
 end
 
 local version = function()
-  local version = split(split(vim.fn.execute "version", "\n")[1], "-")[1]
-  return version
+  local version = split(split(vim.fn.execute "version", "\n")[1], "-")
+
+  return ("%s (%s)"):format(version[1], version[2])
 end
 local M = {
 
