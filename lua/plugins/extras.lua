@@ -41,7 +41,7 @@ return {
   },
   {
     "github/copilot.vim",
-    event = { "InsertEnter" },
+    event = { "BufReadPost", "BufNewFile" },
   },
   {
     "karb94/neoscroll.nvim",
@@ -62,7 +62,7 @@ return {
   },
   {
     "Exafunction/codeium.nvim",
-    event = { "InsertEnter" },
+    event = { "BufReadPost", "BufNewFile" },
     dependencies = {
       "nvim-lua/plenary.nvim",
       "hrsh7th/nvim-cmp",
