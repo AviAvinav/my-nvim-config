@@ -34,6 +34,10 @@ map("i", "jk", "<Esc>")
 map("i", "kj", "<Esc>")
 -- map("i", "<C-[", "<Esc> o")
 
+-- clipboard
+map("x", "+y", '"+y', opts)
+map("x", "*y", '"+y', opts)
+
 -- Telescope
 map("n", "ff", ":Telescope find_files<Return>", opts)
 map("n", "fg", ":Telescope live_grep<Return>", opts)
