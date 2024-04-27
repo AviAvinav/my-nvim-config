@@ -20,6 +20,9 @@ end
 
 local version = function()
   local version = split(split(vim.fn.execute "version", "\n")[1], "-")
+  if version[2] ~= "dev" then
+    return ("%s"):format(version[1])
+  end
 
   return ("%s (%s)"):format(version[1], version[2])
 end
