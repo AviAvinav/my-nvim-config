@@ -38,7 +38,7 @@ return {
     }
     ls.add_snippets(nil, { lua = snips.lua, cpp = snips.cpp })
   end,
-  dependencies = { "rafamadriz/friendly-snippets" },
+  dependencies = { "rafamadriz/friendly-snippets", "saadparwaiz1/cmp_luasnip" },
   event = { "BufReadPost", "BufNewFile" },
   build = "make install_jsregexp",
 }
