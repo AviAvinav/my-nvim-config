@@ -71,4 +71,8 @@ return {
       require("codeium").setup {}
     end,
   },
+  {
+    "fladson/vim-kitty",
+    ft = { "kitty" },
+  },
 }

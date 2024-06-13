@@ -4,4 +4,5 @@ return {
   require "plugins.colorschemes.t2c",
   require "plugins.colorschemes.cyberdream",
   require "plugins.colorschemes.tokyodark",
+  require "plugins.colorschemes.rosepine",
 }

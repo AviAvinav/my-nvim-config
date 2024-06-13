@@ -5,7 +5,7 @@ local M = {
 
 M.opts = {
   options = {
-    theme = "tokyonight",
+    theme = "rose-pine",
     -- section_separators = { left = "", right = "" },
     section_separators = { left = "", right = "" },
     component_separators = { left = "", right = "" },
