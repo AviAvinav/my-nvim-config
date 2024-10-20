@@ -75,4 +75,10 @@ return {
     "fladson/vim-kitty",
     ft = { "kitty" },
   },
+  { "nvchad/volt", lazy = true },
+  {
+    "nvchad/minty",
+    event = { "BufReadPost", "BufNewFile" },
+    cmd = { "Shades", "Huefy" },
+  },
 }

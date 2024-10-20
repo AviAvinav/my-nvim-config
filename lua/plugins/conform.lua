@@ -25,6 +25,7 @@ M.config = function()
       json = { { "prettierd", "prettier" } },
       javascriptreact = { { "prettierd", "prettier" } },
       typescriptreact = { { "prettierd", "prettier" } },
+      java = { "google-java-format" },
     },
   }
   vim.api.nvim_create_autocmd("BufWritePre", {
