@@ -20,9 +20,9 @@ if has "macunix" then
   O.clipboard:append { "unnamedplus" }
 end
 
-if has "win32" or has "win64" then
-  O.clipboard:append { "unnamed", "unnamedplus" }
-end
+-- if has "win32" or has "win64" then
+--   O.clipboard:append { "unnamed", "unnamedplus" }
+-- end
 
 -- Shell for Windows
 if has "win32" or has "win64" then
