@@ -61,7 +61,7 @@ return {
     config = true,
   },
   {
-    "Exafunction/codeium.nvim",
+    "Exafunction/windsurf.nvim",
     event = { "BufReadPost", "BufNewFile" },
     dependencies = {
       "nvim-lua/plenary.nvim",

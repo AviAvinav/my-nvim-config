@@ -30,3 +30,8 @@ This repo contains my config files for my neovim setup. If you like it and wish 
 Problem: The LSP weren't working even after installing it with mason
 
 Solution: Add the location of them to PATH
+
+## How to solve codeium gzip issue?
+
+
+to fix gzip issue in codeium, winget install cygwin

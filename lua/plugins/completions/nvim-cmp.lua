@@ -34,6 +34,7 @@ return {
         { name = "buffer" },
         { name = "treesitter" },
         { name = "codeium" },
+		-- to fix gzip issue in codeium, winget install cygwin
       },
       formatting = {
         format = lspkind.cmp_format {

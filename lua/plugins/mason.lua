@@ -53,28 +53,28 @@ return {
           "clangd",
         },
       }
-      require("mason-lspconfig").setup_handlers {
-        function(server)
-          require("lspconfig")[server].setup {
-            on_attach = on_attach,
-          }
-        end,
-        ["lua_ls"] = function()
-          require("lspconfig").lua_ls.setup {
-            on_attach = on_attach,
-            settings = {
-              Lua = {
-                diagnostics = {
-                  globals = { "vim" },
-                },
-                workspace = {
-                  library = vim.api.nvim_get_runtime_file("", true),
-                },
-              },
-            },
-          }
-        end,
-      }
+      -- require("mason-lspconfig").setup_handlers {
+      --   function(server)
+      --     require("lspconfig")[server].setup {
+      --       on_attach = on_attach,
+      --     }
+      --   end,
+      --   ["lua_ls"] = function()
+      --     require("lspconfig").lua_ls.setup {
+      --       on_attach = on_attach,
+      --       settings = {
+      --         Lua = {
+      --           diagnostics = {
+      --             globals = { "vim" },
+      --           },
+      --           workspace = {
+      --             library = vim.api.nvim_get_runtime_file("", true),
+      --           },
+      --         },
+      --       },
+      --     }
+      --   end,
+      -- }
     end,
   },
 }
